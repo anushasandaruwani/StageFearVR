@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC8367602A7F9E8D00B98674 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83675F2A7F9E8D00B98674 /* LoginViewController.swift */; };
+		EC8367622A7FA06E00B98674 /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8367612A7FA06E00B98674 /* SignUPViewController.swift */; };
+		EC8367662A7FA53000B98674 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC8367652A7FA53000B98674 /* GoogleService-Info.plist */; };
+		EC8367692A7FA7F500B98674 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EC8367682A7FA7F500B98674 /* FirebaseAuth */; };
 		EC85ED212A7148F200759674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85ED202A7148F200759674 /* AppDelegate.swift */; };
 		EC85ED232A7148F200759674 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85ED222A7148F200759674 /* SceneDelegate.swift */; };
 		EC85ED252A7148F200759674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC85ED242A7148F200759674 /* ViewController.swift */; };
@@ -16,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC83675F2A7F9E8D00B98674 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC8367612A7FA06E00B98674 /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
+		EC8367652A7FA53000B98674 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC85ED1D2A7148F200759674 /* StageFearVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StageFearVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC85ED202A7148F200759674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC85ED222A7148F200759674 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8367692A7FA7F500B98674 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +68,12 @@
 				EC85ED222A7148F200759674 /* SceneDelegate.swift */,
 				EC85ED242A7148F200759674 /* ViewController.swift */,
 				EC85ED262A7148F200759674 /* Main.storyboard */,
+				EC83675F2A7F9E8D00B98674 /* LoginViewController.swift */,
+				EC8367612A7FA06E00B98674 /* SignUPViewController.swift */,
 				EC85ED292A7148F300759674 /* Assets.xcassets */,
 				EC85ED2B2A7148F300759674 /* LaunchScreen.storyboard */,
 				EC85ED2E2A7148F300759674 /* Info.plist */,
+				EC8367652A7FA53000B98674 /* GoogleService-Info.plist */,
 			);
 			path = StageFearVR;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = StageFearVR;
+			packageProductDependencies = (
+				EC8367682A7FA7F500B98674 /* FirebaseAuth */,
+			);
 			productName = StageFearVR;
 			productReference = EC85ED1D2A7148F200759674 /* StageFearVR.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = EC85ED142A7148F200759674;
+			packageReferences = (
+				EC8367672A7FA7F500B98674 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EC85ED1E2A7148F200759674 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC85ED2D2A7148F300759674 /* LaunchScreen.storyboard in Resources */,
+				EC8367662A7FA53000B98674 /* GoogleService-Info.plist in Resources */,
 				EC85ED2A2A7148F300759674 /* Assets.xcassets in Resources */,
 				EC85ED282A7148F200759674 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8367622A7FA06E00B98674 /* SignUPViewController.swift in Sources */,
+				EC8367602A7F9E8D00B98674 /* LoginViewController.swift in Sources */,
 				EC85ED252A7148F200759674 /* ViewController.swift in Sources */,
 				EC85ED212A7148F200759674 /* AppDelegate.swift in Sources */,
 				EC85ED232A7148F200759674 /* SceneDelegate.swift in Sources */,
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC8367672A7FA7F500B98674 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC8367682A7FA7F500B98674 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8367672A7FA7F500B98674 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC85ED152A7148F200759674 /* Project object */;
 }
